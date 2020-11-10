@@ -33,4 +33,3 @@ class User(db.Model):
 
     def check_password(self, value):
         return check_password_hash(self.password, value)
-
